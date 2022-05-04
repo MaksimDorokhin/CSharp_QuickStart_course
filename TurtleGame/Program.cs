@@ -15,19 +15,29 @@ namespace TurtleGame
             Turtle.PenUp();
             GraphicsWindow.BrushColor = "Red";
 
-            var eatX = 200;
-            var eatY = 200;
+            var x = 200;
+            var y = 200;
 
             var eat = Shapes.AddRectangle(10, 10);
-            Shapes.Move(eat, eatX, eatY);
+            Shapes.Move(eat, x, y);
+
+            Random rand = new Random();
 
             while(true)
             {
                 Turtle.Move(10);
-                if (Turtle.X == eatX && Turtle.Y == eatY)
+                if (Turtle.X >= x && Turtle.X <= x + 10 && Turtle.Y >= y && Turtle.Y <= y +10)
                 {
-                    eatX = eatX + 20;
-                    Shapes.Move(eat, eatX, eatY);
+                    x = rand.Next(0, GraphicsWindow.Width);
+                    y = rand.Next(0, GraphicsWindow.Height);
+                    Shapes.Move(eat, x, y);
+                    Turtle.Speed++;
+                }
+                if (Turtle.X > GraphicsWindow.Width || Turtle.Y > GraphicsWindow.Height)
+                {
+                    GraphicsWindow.Clear();
+                    GraphicsWindow.DrawText(200, 200, "Game Over!");
+                    break;
                 }
             }
         }
