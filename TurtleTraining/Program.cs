@@ -11,27 +11,25 @@ namespace TurtleTraining
 	{
 		static void Main(string[] args)
 		{
-			int i = 0;
 			Turtle.Speed = 9;
-			/*	while (i < 4)
-				{
-					Turtle.Move(50);
-					Turtle.TurnRight();
-					Turtle.Move(50);
-					Turtle.TurnRight();
-					Turtle.Move(50);
-					Turtle.TurnLeft();
-					Turtle.Move(50);
-					Turtle.TurnLeft();
-					i++;
-				}*/
+            for(int i = 0; i < 4; i++)
+            {
+                Turtle.Move(50);
+                Turtle.TurnRight();
+                Turtle.Move(50);
+                Turtle.TurnRight();
+                Turtle.Move(50);
+                Turtle.TurnLeft();
+                Turtle.Move(50);
+                Turtle.TurnLeft();
+            }
 
-			while (i < 6)
+            /*while (i < 6)
 			{
 				Turtle.Move(100);
 				Turtle.Turn(60);
 				i++;
-			}
-		}
+			}*/
+        }
 	}
 }
