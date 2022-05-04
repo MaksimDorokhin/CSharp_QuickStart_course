@@ -35,12 +35,8 @@ namespace TurtleTraining
         {
             // Letter P begin
             Turtle.Angle = 0;
-            Turtle.Move(size);
-            for (int i = 0; i < 3; i++)
-            {
-                Turtle.TurnRight();
-                Turtle.Move(size / 2);
-            }
+            Turtle.Move(size / 2);
+            WriteO(size / 2);
             // Letter O end
         }
         static void Main(string[] args)
