@@ -31,13 +31,14 @@ namespace TurtleGame
                     x = rand.Next(0, GraphicsWindow.Width);
                     y = rand.Next(0, GraphicsWindow.Height);
                     Shapes.Move(eat, x, y);
+                    Sound.PlayChimes();
                     Turtle.Speed++;
                 }
-                if (Turtle.X > GraphicsWindow.Width || Turtle.Y > GraphicsWindow.Height)
+                if (Turtle.X > GraphicsWindow.Width || Turtle.X < 0 || Turtle.Y > GraphicsWindow.Height || Turtle.Y < 0)
                 {
                     GraphicsWindow.Clear();
                     GraphicsWindow.DrawText(200, 200, "Game Over!");
-                    Sound.PlayChimes();
+                    Sound.PlayBellRing();
                     break;
                 }
             }
