@@ -37,6 +37,7 @@ namespace TurtleGame
                 {
                     GraphicsWindow.Clear();
                     GraphicsWindow.DrawText(200, 200, "Game Over!");
+                    Sound.PlayChimes();
                     break;
                 }
             }
