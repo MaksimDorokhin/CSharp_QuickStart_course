@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaAdvisor", "CinemaAdvi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurtleTraining", "TurtleTraining\TurtleTraining.csproj", "{62B5AE11-0C97-43A2-89A8-5E265DC5542D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurtleGame", "TurtleGame\TurtleGame.csproj", "{A31E5660-F254-4814-9C47-C81F0C4494AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{62B5AE11-0C97-43A2-89A8-5E265DC5542D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62B5AE11-0C97-43A2-89A8-5E265DC5542D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62B5AE11-0C97-43A2-89A8-5E265DC5542D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A31E5660-F254-4814-9C47-C81F0C4494AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A31E5660-F254-4814-9C47-C81F0C4494AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A31E5660-F254-4814-9C47-C81F0C4494AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A31E5660-F254-4814-9C47-C81F0C4494AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
